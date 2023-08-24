@@ -1,0 +1,107 @@
+<?php include_once 'header.php' ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+<table>
+    <tr>
+        <td>
+            
+<h3>Contact Form</h3>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+        </td>
+        <td>div class="col-md-190 map-grid">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6509687.090753893!2d-123.76387427440008!3d37.18697025540024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb9fe5f285e3d%3A0x8b5109a227086f55!2sCalifornia%2C+USA!5e0!3m2!1sen!2sin!4v1491201047627"></iframe>
+        </div>
+        <div class="clearfix"> </div></td>
+        <td>
+            <div class="col mb-1 text-center">
+                <div class="text-center">
+                    <a href="#" target="_blank"><span class="bi bi-facebook px-2"></span></a>
+                    <a href="#" target="_blank"><span class="bi bi-whatsapp px-2"></span></a>
+                    <a href="#" target="_blank"><span class="bi bi-twitter px-2"></span></a>
+                    <a href="#" target="_blank"><span class="bi bi-instagram px-2"></span></a>
+                    <a href="#" target="_blank"><span class="bi bi-youtube px-2" text="red"></span></a>
+                    </div>
+                    <div class="my-1 text-white">
+                    <i class="bi bi-geo-alt"></i> Kigali Rwanda<br>
+                    <i class="bi bi-telephone"></i> +250788XXXXXX<br><br>
+                    <i class="bi bi-building"></i>  CR_PROGRAM Ltd COMPANY<br>
+                    </div>
+                </div>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
+
+
+
+    
+           
+    
+
+
+
+
+
+<?php include_once 'footer.php' ?>
